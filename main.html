@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Open Exam</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- MATERIAL DESIGN ICONIC FONT -->
+	<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<!-- STYLE CSS -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<section>
+		<div class="container ">
+			<div class="col-md-9 m-0 pl-2 pr-0 next-cont">
+				<div class="alert alert-warning alert-dismissible fade show" id="timerEnd" role="alert">
+					<strong>OOPS!</strong> question time is ended.
+				</div>
+				<div class="exam-start">
+					<button id="start-btn" onclick="startExam(),login()"> start Exam</button>
+				</div>
+				<div class="ques-cont p-4">
+					<div class="header">
+						<h2 class="px-2"> Open Exam</h2>
+						<div id="mark">
+							<i class="fa-solid fa-thumbtack" id="marki" onclick="markQuestion()"></i>
+						</div>
+						<div class="timer">
+							<h6>TIME LEFT</h6>
+							<div class="hline"></div>
+							<h5><span class="timeCount">15</span></h5>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="question-body">
+						<h3 class="px-2 head-question"></h3>
+						<div class="opt-container">
+							<div class="op1 p-1 opt"></div>
+							<div class="op1 p-1 opt"></div>
+							<div class="op1 p-1 opt"></div>
+							<div class="op1 p-1 opt"></div>
+						</div>
+					</div>
+					<div class="question-footer m-3 ">
+						<button id="next-btn" onclick="nextQuestion(this)">OK</button>
+						<div class="arrows">
+							<i class="fa-solid fa-caret-left" onclick="getNext()"></i>
+							<i class="fa-solid fa-caret-right" onclick="getPrev()"></i>
+						</div>
+
+					</div>
+					<div class="markedQ" style="display: none;">
+						<p class="addMarked"></p>
+
+					</div>
+				</div>
+				<div class="resut-container p-4" style="display: none;">
+					<div class="header d-flex flex-column">
+						<h2 class="px-2"> Open Exam</h2>
+						<div class="line2"></div>
+					</div>
+
+					<div class="result-body d-flex flex-column align-items-center">
+						<h3 class="result-scor">YOUR SCORE IS</h3>
+						<h4 class="degree"> <strong id="score">0</strong>/5</h4>
+					</div>
+					<div class="question-footer m-3 ">
+						<div class="imgsuccess"></div>
+						<div class="btns d-flex ">
+							<button id="restart-btn" onclick="Retray(this)">Retray</button>
+							<button id="close-btn" onclick="Exit(this)">Exit</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 side-img m-0 p-0">
+				<img src="images/reg.jpg" alt="" class="exam-img">
+			</div>
+		</div>
+	</section>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

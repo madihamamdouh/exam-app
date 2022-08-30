@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Exam sign up</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- MATERIAL DESIGN ICONIC FONT -->
+	<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+	<!-- STYLE CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="image-holder">
+			<img src="images/reg.jpg" alt="">
+		</div>
+		<div class="form-inner">
+			<form name="regForm" role="form" onsubmit="signUp()" action="./signin.html">
+				<div class="form-header">
+					<h3>Sign up</h3>
+					<img src="images/sign-up.png" alt="" class="sign-up-icon">
+				</div>
+				<div class="form-group">
+					<label for="">Username:</label>
+					<input type="text" class="form-control" name="username" pattern="^[A-Za-z][A-Za-z0-9_]{7,29}$"
+						required>
+				</div>
+				<div class="form-group">
+					<label for="">E-mail:</label>
+					<input type="text" id="regemail" name="mail" class="form-control"
+						pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" required>
+				</div>
+				<div class="form-group">
+					<label for="">Password:</label>
+					<input type="password" id="regpassword" name="password" class="form-control" min="4" max="8"
+						required>
+				</div>
+				<div class="form-group">
+					<label for="">Reset Password:</label>
+					<input type="password" class="form-control" name="reset-password" id="reset-password" min="4"
+						max="8" required>
+				</div>
+				<button type="submit" value="register" ng-style="btnStyle" ng-click="checkLogin()">CREATE MY
+					ACCOUNT</button>
+			</form>
+		</div>
+	</div>
+	<script src="js/security.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Exam sign in</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="css/signin.css">
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="image-holder">
+			<img src="images/reg.jpg" alt="">
+		</div>
+		<div class="form-inner">
+			<form name="loginForm" action="./main.html" role="form" onclick="signIn()">
+				<div class="form-header">
+					<h3>Sign in</h3>
+					<img src="images/sign-up.png" alt="" class="sign-up-icon">
+				</div>
+				<div class="form-group">
+					<label for="">E-mail:</label>
+					<input type="email" class="form-control" name="mail" id="mail"
+						pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" required>
+				</div>
+				<div class="form-group">
+					<label for="">Password:</label>
+					<input type="password" class="form-control" name="password" id="password" min="4" max="8" required>
+				</div>
+				<button type="submit" ng-style="btnStyle" ng-click="checkLogin()">SIGN
+					IN</button>
+				<div class="form-group "><a href="#" style="color:white; text-align:end; padding: 10px;">Forgot
+						Password?</a></div>
+			</form>
+		</div>
+	</div>
+
+	<script>
+		let signIn = () => {
+			let logindata = {
+				email: document.getElementById("mail").value,
+				password: document.getElementById("password").value,
+			};
+			console.log(logindata)
+			// localStorage.setItem("loginData", JSON.stringify(loginData));
+
+			if (logindata != JSON.parse(localStorage.getItem("formData"))) {
+				alert("invalid email or password")
+			}
+
+
+		};
+	</script>
+</body>
+
+</html>

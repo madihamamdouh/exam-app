@@ -1,0 +1,94 @@
+{
+   "questios": [
+      {
+         "numb": 1,
+         "ques": ". what is sky color",
+         "answer": "Ablue",
+         "options": [
+            "blue",
+            "red",
+            "white",
+            "colorless"
+         ],
+         "spn": [
+            "A",
+            "B",
+            "C",
+            "D"
+         ],
+         "img": "images/1.jpg"
+      },
+      {
+         "numb": 2,
+         "ques": ". how many rivers in Egypt",
+         "answer": "B1",
+         "options": [
+            "2",
+            "1",
+            "0",
+            "3"
+         ],
+         "spn": [
+            "A",
+            "B",
+            "C",
+            "D"
+         ],
+         "img": "images/2.jpg"
+      },
+      {
+         "numb": 3,
+         "ques": ". in which country is the largest woods",
+         "answer": "Achina",
+         "options": [
+            "china",
+            "South America",
+            "Brazil",
+            "South Africa"
+         ],
+         "spn": [
+            "A",
+            "B",
+            "C",
+            "D"
+         ],
+         "img": "images/3.jpg"
+      },
+      {
+         "numb": 4,
+         "ques": ". how many layer's skin people have",
+         "answer": "C7",
+         "options": [
+            "5",
+            "8",
+            "7",
+            "9"
+         ],
+         "spn": [
+            "A",
+            "B",
+            "C",
+            "D"
+         ],
+         "img": "images/4.jpg"
+      },
+      {
+         "numb": 5,
+         "ques": ". what is the name of the oldest country ever",
+         "answer": "DIraq",
+         "options": [
+            "Egypt",
+            "China",
+            "Greek",
+            "Iraq"
+         ],
+         "spn": [
+            "A",
+            "B",
+            "C",
+            "D"
+         ],
+         "img": "images/5.jpg"
+      }
+   ]
+}
